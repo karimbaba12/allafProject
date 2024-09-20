@@ -4,6 +4,7 @@
   font-weight: 700;
   font-size: 16px;
   font-weight: normal;
+  z-index: 1;
   
 }
 
@@ -22,8 +23,11 @@ body {
   padding: 0px;
 }
  .image {
-  width: 70px;
-  margin: 0vh 0vh 0vh 3vh;
+  width: 100px;
+  height: 100px;
+  margin: 0vh 0vh 0vh 4vh;
+  z-index: 1; 
+  
 }
 
 .d-flex {
@@ -69,7 +73,8 @@ body {
   transition: transform 1s ease-in-out;
 } */
 .carousel-inner{
-  margin-top: -2px;
+  margin-top: -128px;
+  z-index: 0;
 }
 .carousel-item.active img {
   animation: zoomOut 1.5s ease-in-out;
