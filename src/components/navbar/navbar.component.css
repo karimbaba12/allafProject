@@ -1,0 +1,32 @@
+ .navbar-nav {
+  flex-grow: 1;
+  justify-content: space-around;
+  font-weight: 700;
+ 
+}
+
+body {
+  /* background-image: url(''); */
+  background-size: cover;
+  background-position: center;
+}
+.navbar.bg-body-tertiary {
+  background-color: transparent !important;
+}
+ .image {
+  width: 60px;
+  margin: 0vh 0vh 0vh 3vh;
+}
+
+.d-flex {
+  margin-left: auto;
+}
+
+.navbar-nav .dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0px; 
+    background-color: red;
+}
+.navbar-nav .dropdown-menu {
+  display: none;
+}
