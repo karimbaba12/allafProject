@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component,AfterViewInit } from '@angular/core';
+declare var bootstrap: any;
 
 @Component({
   selector: 'app-navbar',
@@ -8,6 +9,12 @@ import { Component } from '@angular/core';
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.css'
 })
-export class NavbarComponent {
-
-}
+export class NavbarComponent implements AfterViewInit {
+ ngAfterViewInit(): void {
+    const myCarousel = document.getElementById('carouselExampleControls');
+    const carousel = new bootstrap.Carousel(myCarousel, {
+      interval: 2000,
+      ride: 'carousel'
+    });
+  }
+} 

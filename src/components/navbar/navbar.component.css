@@ -2,19 +2,27 @@
   flex-grow: 1;
   justify-content: space-around;
   font-weight: 700;
- 
+  font-size: 16px;
+  font-weight: normal;
+  
+}
+
+.nav-item-Home:hover { 
+  
+  border-bottom: red;
 }
 
 body {
-  /* background-image: url(''); */
+
   background-size: cover;
   background-position: center;
 }
 .navbar.bg-body-tertiary {
   background-color: transparent !important;
+  padding: 0px;
 }
  .image {
-  width: 60px;
+  width: 70px;
   margin: 0vh 0vh 0vh 3vh;
 }
 
@@ -25,8 +33,317 @@ body {
 .navbar-nav .dropdown:hover .dropdown-menu {
   display: block;
   margin-top: 0px; 
-    background-color: red;
+  border-top: 2px solid red;
 }
 .navbar-nav .dropdown-menu {
   display: none;
+}
+
+.search-input > input {
+  border: 0;
+  background: transparent;
+  outline: 0;
+  width: 300px;
+  height: 40px;
+}
+.search-input {
+  padding-inline: 10px;
+  border-radius: 20px;
+  background-color: white;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid black;
+}
+
+.high-quality-aluminium{
+  margin-top: 10vh;
+}
+
+.high-quality-double{
+  margin-top: 7vh;
+}
+
+/* .carousel-item img {
+  transition: transform 1s ease-in-out;
+} */
+.carousel-inner{
+  margin-top: -2px;
+}
+.carousel-item.active img {
+  animation: zoomOut 1.5s ease-in-out;
+}
+
+@keyframes zoomOut {
+  20% {
+    transform: scale(1.05); /* Start zoomed in */
+  }
+  100% {
+    transform: scale(1); /* Zoom out to normal size */
+  }
+}
+
+/* Main container for flexbox layout */
+.image-row {
+  display: flex;
+  justify-content: space-around; /* Spaces images evenly */
+  gap: 10px; /* Adds gap between images */
+}
+
+.image-container {
+  position: relative;
+  overflow: hidden; /* Ensures image doesn't expand out of its container */
+  width: 23%; /* Four images in a row (23% to account for gaps) */
+  cursor: pointer;
+  margin-top: 0vh;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  transition: transform 1s ease; /* Smooth zoom-in effect */
+}
+
+.image-container:hover img {
+  transform: scale(1.1) ; rotate: 10deg; /* Zoom-in on hover */
+}
+
+/* Overlay that appears on hover */
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Black transparent background */
+  opacity: 0;
+  transition: opacity 0.5s ease; /* Smooth transition for overlay */
+}
+
+/* Display overlay on hover */
+.image-container:hover .overlay {
+  opacity: 1;
+}
+
+/* Text inside overlay */
+.text {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centers the text */
+  text-align: center;
+}
+
+h2{
+  margin-top: 10vh;
+  margin-left: 2vh;
+}
+
+
+.index_video_youtube {
+  display: flex;
+  justify-content: space-between; /* Spaces the videos evenly */
+  gap: 15px; /* Adds some space between the videos */
+  list-style-type: none; /* Removes default bullet points from list */
+  padding: 0;
+  margin-top: 10vh;
+}
+
+.index_video_youtube11 {
+  flex: 1; /* Makes each video take an equal share of the available space */
+  max-width: 100%; /* Ensures that each video takes up approximately one-third of the row */
+  position: relative;
+
+}
+
+.index_video_youtube iframe {
+   position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 39vh
+}
+
+
+.image-video {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 20vh;
+    }
+
+    .image, .video {
+        flex: 1;
+        margin: 10px;
+        max-width: 100%;
+    }
+
+    .image img, .video iframe {
+      
+        width: 100%;
+        height: 20%;
+
+    }
+
+    .video iframe{
+      height: 38vh;
+    }
+
+
+    .hight-quality-modern{
+
+      margin-top: 20vh;
+    }
+
+    .learn-more{
+      display: block;
+      margin: 50vh auto 0vh auto;
+      height: 60px;
+      width: 200px;
+      }
+
+
+      .text-why-demo{
+        display: block;
+        margin-top: 40vh;
+        margin-left: 5vh;
+      }
+
+      .index_company_intr {
+    /* padding-top: 180px; */
+    padding-bottom: 180px;
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-background-size: 100% auto;
+    background-size: 100% auto;
+    margin-top: 15vh;
+}
+
+.index_company_intr:before, .index_company_intr:after {
+    content: '';
+    display: block;
+    width: 2px;
+    height: 128px;
+    border-left: 1px solid;
+    border-right: 1px solid;
+    margin: 0 auto auto ;
+}
+
+.index_company_intr:before, .index_company_intr:after {
+    content: '';
+    display: block;
+    width: 2px;
+    height: 128px;
+    border-left: 1px solid;
+    border-right: 1px solid;
+    margin: 0 auto;
+}
+
+
+.index_company_intr .index_bd {
+    padding: 40px 0;
+    text-align: center;
+}
+
+
+/* 
+.transparent-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid black; 
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+    background-color: transparent;
+    position: relative;
+    overflow: hidden; 
+    z-index: 1; 
+    transition: color 0.4s ease;
+}
+
+.transparent-btn::before, .transparent-btn::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 0; 
+    background-color: black;
+    z-index: 0;
+       transition: width 0.4s ease; 
+}
+
+.transparent-btn::before {
+    left: 0; 
+}
+
+.transparent-btn::after {
+    right: 0;
+}
+
+.transparent-btn:hover::before, .transparent-btn:hover::after {
+    width: 50%; 
+}
+
+.transparent-btn:hover {
+    color: white; 
+    z-index: 2; 
+}
+*/
+
+.btn{
+  height: 40px;
+  width: 150px;
+  margin-top: 20px;
+  border: 1px solid black;
+}
+.btn:hover {
+background-color: black;
+color: white;
+}
+
+.company_subscribe, .company_subscribe a {
+    color: #fff;
+}
+
+.company_subscribe {
+    padding: 70px 0;
+    text-align: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.social_items.flex_row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.social_items.flex_row li {
+  margin: 10vh; /* add some margin between items */
+}
+
+.foot_items{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 5vh 0 2vh;
+}
+
+footer.web_footer h2 {
+  color: #ffffff;
+  font-size: 15px;
+  margin-left: 2vh;
+}
+
+footer.web_footer .foot_item_bd li {
+  color: #808080; 
+  font-size: 15px;
+}
+footer.web_footer .foot_item_bd li a {
+  color: white; 
 }
