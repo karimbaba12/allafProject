@@ -1,0 +1,65 @@
+/* 
+.foot_items{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0vh 5vh 0 2vh;
+
+}
+
+footer.web_footer h2 {
+  color: #ffffff;
+  font-size: 15px;
+  margin-left: 2vh;
+}
+
+footer.web_footer .foot_item_bd li {
+  color: #808080; 
+  font-size: 15px;
+}
+footer.web_footer .foot_item_bd li a {
+  color: white; 
+}
+.foot_item .foot_item_nav{
+    margin-top: 10vh;
+} */
+
+.footer{
+    background-image: url(https://cdnus.globalso.com/medodecor/footer_bg.png);
+    height: 40vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+img{
+    width: 30vh;
+    height: 30vh;
+    margin-left: 15vh;
+    margin-top: 7vh;
+ 
+}
+.links-item{
+    margin-top: 10vh;
+    margin-left: 5vh;
+}
+.links-item h5{
+  
+    margin-left: 4vh;
+    color:rgb(231, 198, 198);
+}
+.links-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: 12px;
+}
+
+.links-item li{
+    color: white;
+
+}
+.links-item a {
+ text-decoration: none;
+ color: white;
+}
