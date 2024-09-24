@@ -10,19 +10,19 @@ import { FooterComponent } from "../../footer/footer.component";
   styleUrl: './casement-window.component.css'
 })
 export class CasementWindowComponent {
-  isFirstDivVisible: boolean = true; // Initially show the first div
-  isSecondDivVisible: boolean = false; // Initially hide the second div
+  isFirstDivVisible: boolean = true;
+  isSecondDivVisible: boolean = false; 
 
-  // Method to toggle the first div visibility
-  toggleFirstDiv() {
+
+  firstButton() {
     this.isFirstDivVisible = true;
     this.isSecondDivVisible = false;
   }
 
-  // Method to hide the first div and show the second div
-  showSecondDiv() {
+  secondButton() {
     this.isFirstDivVisible = false;
     this.isSecondDivVisible = true;
   }
+
 
 }

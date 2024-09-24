@@ -93,3 +93,14 @@ body {
   justify-content: space-between;
   border: 1px solid black;
 }
+ 
+  @media only screen and (max-width: 600px) {
+  .container-fluid{
+    z-index: 2;
+  }
+  .container-fluid img{
+    margin-top: 8px;
+    margin-bottom: 0vh;
+  }
+  
+  }
