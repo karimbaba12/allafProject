@@ -44,13 +44,18 @@ img{
     .footer{
       flex-direction: column;
       height: 200vh;
+      width: 100%;
+ 
+
     }
+    
    img{
-    width: 20vh;
-    height: 20vh;
-    margin-left: 22vh;
+    width: 60%;
+    height: 100%;
     margin-top: 0vh;
+    margin-left: 0vh;
 }
+
 .links-container{
   flex-direction: column;
   flex-wrap: wrap;

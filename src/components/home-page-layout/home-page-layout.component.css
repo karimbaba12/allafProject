@@ -129,6 +129,7 @@ h2{
     }
 
     .video iframe{
+      width: 100%;
       height: 38vh;
     }
 
@@ -246,7 +247,7 @@ color: white;
   
  }
  .image-row .image-container{
-  width:60vh
+  width:100%
  }
  .index_video_youtube{
   flex-direction: column;
@@ -264,13 +265,13 @@ color: white;
   margin-bottom: 0vh;
  }
  .image-video .video iframe{
-  width: 62vh;
+  width: 100%
  }
 
  .index_company_intr .layout{
   font-size: 10px;
-  width: 40vh;
-  margin-left: 12vh;
+  width: 30vh;
+ margin-left: 10vh;
 
  }
 

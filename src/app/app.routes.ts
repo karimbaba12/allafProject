@@ -22,9 +22,14 @@ import { ParallelWindowComponent } from '../components/Windows/parallel-window/p
 import { SlidingWindowComponent } from '../components/Windows/sliding-window/sliding-window.component';
 export const routes: Routes = [
      {
-        path:"",
-        component:HomePageLayoutComponent
+        path: '',
+        component : HomePageLayoutComponent
     },
+    {
+        path : "Casement-Window",
+        component: CasementWindowComponent
+    },
+    
     {
         path : "BiFolding-Door",
         component:BiFoldingDoorsComponent
