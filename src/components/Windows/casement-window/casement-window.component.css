@@ -113,6 +113,9 @@ max-width: 10%;
   margin-top: 5vh;
   padding-bottom: 5vh;
 }
+.specification-container2 .image-text{
+  margin-left: 10vh;
+}
 .paragraph{
       margin-left: 60vh;
     max-width: 120vh;
@@ -254,7 +257,9 @@ margin-top: 15vh;
   width: 40%;
   height: 40%;
 }
-
+.specification-container2{
+  margin: 10vh;
+}
 
 .two-image{
   display: flex;
@@ -265,4 +270,120 @@ margin-top: 15vh;
 .two-image img{
   width: 25%;
   height: 25%;
+}
+
+@media only screen and (max-width: 600px) {
+  .image-container{
+   
+    margin-top: -20px;
+    width: 100%;
+
+    
+}
+
+.image-data{
+  display: flex;
+  flex-direction: column;
+
+}
+.technical-data-container h5 {
+  margin-left: 5vh;
+  margin-bottom: 5vh;
+  margin-top: 5vh;
+}
+
+.technical-data-container{
+
+  justify-content: flex-start;
+  margin-left: 0vh;
+  margin-right: 0vh;
+  flex-direction: column;
+  align-items: end;
+}
+.image-three-column {
+
+  margin-top: 2vh;
+  
+}
+.features h5{
+  margin-left: 0vh;
+  justify-content: flex-start;
+  display: flex;
+  align-content: flex-start;
+}
+.text-on-image-big{
+  flex-direction: column;
+}
+
+.image-two-small{
+
+  flex-direction: column;
+  margin-top: 10vh;
+  margin-right: 0vh;
+  margin-left: 0vh;
+}
+.big-image{
+  width: 40vh;
+  height: 40vh
+}
+.image-two-small{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  margin-top: 20vh;
+  margin-right: 0vh;
+  margin-left: 0vh;
+}
+.image-two-small img{
+margin-top: 10vh;
+height: 50vh;
+width: 40vh;
+}
+.specification1{
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid black;
+  margin-top: 5vh;
+  padding-bottom: 5vh;
+}
+.image-with-text .image-text{
+  margin-left: 0vh;
+  
+}
+.paragraph{
+      margin-left: 0vh;
+    max-width: 120vh;
+    max-height: 20vh;
+    width:30vh;
+    
+}
+.paragraph p {
+  width: 40vh;
+  margin:10vh 0vh 3vh 3vh;
+
+}
+.specification-container2{
+  margin: 0vh;
+
+}
+#beyond{
+  margin-top: 20vh;
+}
+.two-image{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  margin-top: 15vh  ;
+}
+.two-image img{
+  width: 85%;
+  height: 25%;
+  margin-left: 7%;
+  margin-bottom: 5vh;
+}
+.fl-row .fl-rich-text p{
+      margin: 0vh 30vh 5vh 10vh !important;
+    width: 30vh;
+
+}
 }

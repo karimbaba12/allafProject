@@ -23,8 +23,14 @@ import { SlidingWindowComponent } from '../components/Windows/sliding-window/sli
 export const routes: Routes = [
      {
         path: '',
+        redirectTo :'/Dashboard',
+        pathMatch: 'full'
+    },
+    {
+        path :'Dashboard',
         component : HomePageLayoutComponent
     },
+
     {
         path : "Casement-Window",
         component: CasementWindowComponent
