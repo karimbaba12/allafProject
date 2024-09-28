@@ -10,12 +10,6 @@ declare var bootstrap: any;
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.css'
 })
-export class NavbarComponent implements AfterViewInit {
- ngAfterViewInit(): void {
-    const myCarousel = document.getElementById('carouselExampleControls');
-    const carousel = new bootstrap.Carousel(myCarousel, {
-      interval: 2000,
-      ride: 'carousel'
-    });
-  }
-} 
+export class NavbarComponent  {
+  
+}
