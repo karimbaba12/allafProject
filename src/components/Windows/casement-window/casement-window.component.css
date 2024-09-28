@@ -278,7 +278,10 @@ margin-top: 15vh;
     margin-top: -20px;
     width: 100%;
 
-    
+}
+.image-one{
+  margin-left: 4vh;
+ 
 }
 
 .image-data{
@@ -298,13 +301,17 @@ margin-top: 15vh;
   margin-left: 0vh;
   margin-right: 0vh;
   flex-direction: column;
-  align-items: end;
+  align-items:self-start;
 }
 .image-three-column {
 
   margin-top: 2vh;
+  margin-left: 5vh;
+  display: flex;
+  justify-content: center;
   
 }
+
 .features h5{
   margin-left: 0vh;
   justify-content: flex-start;
@@ -342,7 +349,7 @@ width: 40vh;
 .specification1{
   display: flex;
   flex-direction: column;
-  border-bottom: 1px solid black;
+  border-bottom: none;
   margin-top: 5vh;
   padding-bottom: 5vh;
 }
@@ -385,5 +392,103 @@ width: 40vh;
       margin: 0vh 30vh 5vh 10vh !important;
     width: 30vh;
 
+}
+.button-one-container{
+  max-width: 60vh;
+  width: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: self-start;
+  align-content: flex-start;
+  margin-left: 0vh;
+  background-color: black;
+}
+.first-image-button{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.first-image-button .specification{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.first-image-button img{
+  width: 40vh;
+  height: 40vh;
+}
+.image-two{
+  display: flex;
+  flex-direction: column;
+  width: 80vh;
+  height: 80vh;
+}
+.image-two img{
+  width: 50%;
+  height: 50%;
+  margin-top: 10vh;
+  margin-left: 5vh;
+}
+.specification-container{
+  margin-left: 2vh;
+  display: flex;
+  flex-direction: column;
+  height: 240vh;
+  margin-top: 50vh;
+}
+.specification-container .images{
+  display: flex;
+  flex-direction: column;
+}
+
+.image-text{
+  width: 30vh;
+  height: 30vh;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+}
+.image-text  img{
+  width: 30vh;
+  height: 30vh;
+
+}
+.image-text h6{
+margin-left: 0vh;
+}
+.text-on-image{
+  margin-top: 5vh;
+}
+.text-on-image img{
+  width: 50vh;
+  height: auto;
+  margin-top: 10vh;
+  margin-left: 2vh;
+}
+.text-on-image h5{
+  margin-left: 2vh;
+}
+.specification2 .images{
+  flex-direction: column;
+  margin-left: 2vh;
+  margin-bottom: 10vh;
+}
+.specification2{
+  margin-bottom: 10vh;
+}
+table .table1{
+  font-size: small;
+  margin-top: 10vh;
+  max-width: 30vh;
+}
+table .table2{
+  font-size: small;
+  margin-top: 10vh;
+  width: 10vh;
+}
+th, td {
+  padding: 20px;
+}
+.footer{
+  height: 200vh;
 }
 }
