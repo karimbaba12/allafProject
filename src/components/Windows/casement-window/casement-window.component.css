@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+        
 }
 .image-container{
     z-index: 0;
@@ -43,19 +44,6 @@ margin-bottom: 10vh;
   margin-top: 10vh;
 }
 
-.table-container{
-  margin-left: 2vh;
-  margin-right:2vh ;
-  margin-top: 10vh;
-}
-
-.table{
-  font-size: large;
-  margin-top: 10vh;
-}
-table, th, td {
-  border:1px solid black;
-}
 
 .image-two{
   display: flex;
@@ -112,6 +100,7 @@ max-width: 10%;
   border-bottom: 1px solid black;
   margin-top: 5vh;
   padding-bottom: 5vh;
+
 }
 .specification-container2 .image-text{
   margin-left: 10vh;
@@ -164,12 +153,7 @@ margin-top: 15vh;
  width: 30vh;
 }
 
-.table1{
-  margin-top: 10vh;
-}
-.table2{
-  margin-top: 10vh;
-}
+
 
 .single-image{
   margin-top: 10vh;
@@ -179,9 +163,6 @@ margin-top: 15vh;
   height: 100%;
 }
 
-.table3{
-  margin-top: 10vh;
-}
 
 .technical-data-container{
   display: flex;
@@ -273,6 +254,10 @@ margin-top: 15vh;
 }
 
 @media only screen and (max-width: 600px) {
+ 
+*{
+  overflow: hidden;
+}
   .image-container{
    
     margin-top: -20px;
@@ -306,7 +291,7 @@ margin-top: 15vh;
 .image-three-column {
 
   margin-top: 2vh;
-  margin-left: 5vh;
+  margin-left: 2vh;
   display: flex;
   justify-content: center;
   
@@ -322,29 +307,23 @@ margin-top: 15vh;
   flex-direction: column;
 }
 
-.image-two-small{
 
-  flex-direction: column;
-  margin-top: 10vh;
-  margin-right: 0vh;
-  margin-left: 0vh;
-}
 .big-image{
   width: 40vh;
   height: 40vh
 }
 .image-two-small{
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
   flex-direction: column;
   margin-top: 20vh;
   margin-right: 0vh;
-  margin-left: 0vh;
+  margin-left: 3vh;
 }
 .image-two-small img{
 margin-top: 10vh;
-height: 50vh;
-width: 40vh;
+height: 80%;
+width: 80%;
 }
 .specification1{
   display: flex;
@@ -353,24 +332,32 @@ width: 40vh;
   margin-top: 5vh;
   padding-bottom: 5vh;
 }
+
+.specification1 .images{
+  width: 30vh;
+}
+.image-with-text{
+    margin-top: 10vh;
+}
 .image-with-text .image-text{
   margin-left: 0vh;
+
   
 }
 .paragraph{
-      margin-left: 0vh;
+    margin-left: 0vh;
     max-width: 120vh;
-    max-height: 20vh;
-    width:30vh;
+    max-height: 80vh;
+    width:50vh;
     
 }
 .paragraph p {
   width: 40vh;
-  margin:10vh 0vh 3vh 3vh;
+  margin:2vh 0vh 3vh 0vh;
 
 }
 .specification-container2{
-  margin: 0vh;
+  margin-top: 5vh;
 
 }
 #beyond{
@@ -448,12 +435,14 @@ width: 40vh;
   margin-bottom: 10vh;
 }
 .image-text  img{
-  width: 30vh;
-  height: 30vh;
+  width: 200vh;
+  height: 200vh;
 
 }
 .image-text h6{
 margin-left: 0vh;
+width: 30vh;
+height: 80vh;
 }
 .text-on-image{
   margin-top: 5vh;
@@ -471,24 +460,13 @@ margin-left: 0vh;
   flex-direction: column;
   margin-left: 2vh;
   margin-bottom: 10vh;
+  
 }
 .specification2{
   margin-bottom: 10vh;
 }
-table .table1{
-  font-size: small;
-  margin-top: 10vh;
-  max-width: 30vh;
-}
-table .table2{
-  font-size: small;
-  margin-top: 10vh;
-  width: 10vh;
-}
-th, td {
-  padding: 20px;
-}
+
 .footer{
-  height: 200vh;
+  line-height: 13px;
 }
 }

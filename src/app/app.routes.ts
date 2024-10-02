@@ -19,7 +19,7 @@ import { CasementWindowComponent } from '../components/Windows/casement-window/c
 import { CurtainWallWindowComponent } from '../components/Windows/curtain-wall-window/curtain-wall-window.component';
 import { MotorizedWindowComponent } from '../components/Windows/motorized-window/motorized-window.component';
 import { ParallelWindowComponent } from '../components/Windows/parallel-window/parallel-window.component';
-import { SlidingWindowComponent } from '../components/Windows/sliding-window/sliding-window.component';
+import { SlidingWindowComponent } from '../components/Windows/sliding-window/sliding-window.component';import { CasementWindow2Component } from '../components/Windows/casement-window2/casement-window2.component';
 export const routes: Routes = [
      {
         path: '',
@@ -103,7 +103,9 @@ export const routes: Routes = [
     },
      {
         path : "Casement-Window",
-        component : CasementWindowComponent
+         loadComponent: () => 
+            import('../components/Windows/casement-window/casement-window.component')
+                .then(m => m.CasementWindowComponent)
     },
      {
         path : "Curtain-Wall-Window",

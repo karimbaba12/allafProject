@@ -1,5 +1,7 @@
 * {
     box-sizing: border-box;
+   
+    
 }
 .image-container{
     z-index: 0;
@@ -34,7 +36,8 @@ margin-bottom: 10vh;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  margin-top: 10vh;
+  margin-top: 10vh; 
+  margin-left: 2vh;
  
 }
 
@@ -52,6 +55,7 @@ margin-bottom: 10vh;
 .table{
   font-size: large;
   margin-top: 10vh;
+ 
 }
 table, th, td {
   border:1px solid black;
@@ -69,26 +73,6 @@ table, th, td {
    height: 60%; 
 
   }
-
-  .video-container {
-  position: relative;
-  padding-bottom: 56.25%; /* 16:9 aspect ratio */
-  height: 0;
-  overflow: hidden;
-  max-width: 80%;
- 
-  margin-left: 20vh;
-  margin-top: 10vh;
-  background-color: black;
-}
-
-.video-container iframe {
-  position: absolute;
-  top: 0;
-  margin-right: 50vh;
-  width: 100%;
-  height: 100%;
-}
 .button-one-container{
   margin-left: 40vh;
   margin-right: 40vh;
@@ -96,11 +80,11 @@ table, th, td {
 .images{
 display: flex;
 flex-direction: row;
-max-width: 10%;
+
 }
 .images img{
-  height: 15vh;
-  width: 15vh;
+  height: 100%;
+  width: 100%;
 }
 .specification-container{
   margin-top: 10vh;
@@ -116,6 +100,7 @@ max-width: 10%;
 .specification-container2 .image-text{
   margin-left: 10vh;
 }
+
 .paragraph{
       margin-left: 60vh;
     max-width: 120vh;
@@ -175,7 +160,7 @@ margin-top: 15vh;
   margin-top: 10vh;
 }
 .single-image img {
-  width: 95%;
+  
   height: 100%;
 }
 
@@ -257,9 +242,7 @@ margin-top: 15vh;
   width: 40%;
   height: 40%;
 }
-.specification-container2{
-  margin: 10vh;
-}
+
 
 .two-image{
   display: flex;
@@ -273,6 +256,9 @@ margin-top: 15vh;
 }
 
 @media only screen and (max-width: 600px) {
+*{
+  overflow: hidden;
+}
   .image-container{
    
     margin-top: -20px;
@@ -296,7 +282,6 @@ margin-top: 15vh;
 }
 
 .technical-data-container{
-
   justify-content: flex-start;
   margin-left: 0vh;
   margin-right: 0vh;
@@ -352,25 +337,28 @@ width: 40vh;
   border-bottom: none;
   margin-top: 5vh;
   padding-bottom: 5vh;
+  
 }
+
 .image-with-text .image-text{
   margin-left: 0vh;
   
+  
+}
+.table-container {
+  overflow-x: auto; /* Add this */
 }
 .paragraph{
-      margin-left: 0vh;
+    margin-left: 0vh;
     max-width: 120vh;
-    max-height: 20vh;
-    width:30vh;
-    
+    max-height: 100vh;
+    width:60vh;
+    height: auto;
 }
 .paragraph p {
-  width: 40vh;
+  width: 50vh;
   margin:10vh 0vh 3vh 3vh;
-
-}
-.specification-container2{
-  margin: 0vh;
+  height: 200vh;
 
 }
 #beyond{
@@ -380,19 +368,27 @@ width: 40vh;
   display: flex;
   justify-content: space-around;
   flex-direction: column;
-  margin-top: 15vh  ;
+  margin-top: 15vh;
 }
+
 .two-image img{
   width: 85%;
   height: 25%;
   margin-left: 7%;
   margin-bottom: 5vh;
 }
+/* .specification-container2 .paragraph{
+          margin-left: 0vh;
+        max-width: 120vh;
+        max-height: 40vh;
+        width: 60vh;
+} */
 .fl-row .fl-rich-text p{
       margin: 0vh 30vh 5vh 10vh !important;
     width: 30vh;
 
 }
+
 .button-one-container{
   max-width: 60vh;
   width: 50vh;
@@ -430,30 +426,44 @@ width: 40vh;
   margin-left: 5vh;
 }
 .specification-container{
-  margin-left: 2vh;
   display: flex;
   flex-direction: column;
-  height: 240vh;
+  height: 400vh;
   margin-top: 50vh;
+}
+.specification-container .paragraph{
+  height: 200vh;
+}
+.specification-container h4{
+  width: auto;
+  height: 20vh;
+  font-size: 20px;
 }
 .specification-container .images{
   display: flex;
   flex-direction: column;
-}
 
+}
+.specification-container2 .paragraph{
+  height: 200vh;
+}
+.table-container table {
+  width: 100%; /* Make sure the table takes up the full width */
+}
 .image-text{
   width: 30vh;
-  height: 30vh;
+  height: 70vh;
   margin-top: 10vh;
   margin-bottom: 10vh;
 }
 .image-text  img{
-  width: 30vh;
-  height: 30vh;
+  width: 60vh;
+  height: 60vh;
 
 }
 .image-text h6{
-margin-left: 0vh;
+margin-left: 4vh;
+height: 40vh;
 }
 .text-on-image{
   margin-top: 5vh;
@@ -475,20 +485,35 @@ margin-left: 0vh;
 .specification2{
   margin-bottom: 10vh;
 }
-table .table1{
+ .table1 {
   font-size: small;
   margin-top: 10vh;
-  max-width: 30vh;
+  width: 100%;
+  overflow-x: auto;
+  
+ 
 }
-table .table2{
+ .table2 {
   font-size: small;
   margin-top: 10vh;
-  width: 10vh;
+  width: 100%;
+    overflow-x: auto;
+
 }
+table{
+    font-size: small;
+  margin-top: 10vh;
+  width: 100%;
+}
+.table1,.table2,.table3,.table-container{
+  overflow-x: auto;
+}
+
 th, td {
   padding: 20px;
 }
 .footer{
   height: 200vh;
 }
+
 }
