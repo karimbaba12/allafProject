@@ -255,9 +255,9 @@ margin-top: 15vh;
 
 @media only screen and (max-width: 600px) {
  
-*{
+/* *{
   overflow: hidden;
-}
+} */
   .image-container{
    
     margin-top: -20px;

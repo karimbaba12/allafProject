@@ -37,8 +37,9 @@ margin-bottom: 10vh;
   flex-direction: row;
   justify-content: space-around;
   margin-top: 10vh; 
-  margin-left: 2vh;
- 
+}
+.specification li{
+  margin-right: 2vh;
 }
 
 .image-one{
@@ -102,7 +103,7 @@ flex-direction: row;
 }
 
 .paragraph{
-      margin-left: 60vh;
+      margin-left: 40vh;
     max-width: 120vh;
     max-height: 20vh;
     width:100vh;
@@ -256,9 +257,9 @@ margin-top: 15vh;
 }
 
 @media only screen and (max-width: 600px) {
-*{
+/* *{
   overflow: hidden;
-}
+} */
   .image-container{
    
     margin-top: -20px;
@@ -345,9 +346,7 @@ width: 40vh;
   
   
 }
-.table-container {
-  overflow-x: auto; /* Add this */
-}
+
 .paragraph{
     margin-left: 0vh;
     max-width: 120vh;
@@ -447,9 +446,7 @@ width: 40vh;
 .specification-container2 .paragraph{
   height: 200vh;
 }
-.table-container table {
-  width: 100%; /* Make sure the table takes up the full width */
-}
+
 .image-text{
   width: 30vh;
   height: 70vh;
@@ -485,28 +482,40 @@ height: 40vh;
 .specification2{
   margin-bottom: 10vh;
 }
+
+.table-container {
+  overflow-y: hidden;
+}
  .table1 {
   font-size: small;
   margin-top: 10vh;
   width: 100%;
-  overflow-x: auto;
+  overflow-y: hidden;
   
  
+}
+.table1 .table,.table2 .table,.table3 .table{
+  width: 100%;
+  overflow: scroll;
 }
  .table2 {
   font-size: small;
   margin-top: 10vh;
   width: 100%;
-    overflow-x: auto;
+  overflow-y: hidden;
 
 }
 table{
     font-size: small;
   margin-top: 10vh;
   width: 100%;
+
 }
-.table1,.table2,.table3,.table-container{
-  overflow-x: auto;
+
+
+.table3{
+  margin-top: 10vh;
+   overflow-y: hidden;
 }
 
 th, td {
