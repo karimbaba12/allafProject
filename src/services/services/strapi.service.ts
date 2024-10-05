@@ -6,16 +6,14 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class StrapiService {
-  private apiUrl = 'http://localhost:1337/api'; // Replace with your Strapi URL
+  private apiUrl = 'http://localhost:1337/api';
 
   constructor(private http: HttpClient) { }
 
-  // Fetch all products (example content type)
   getProducts(): Observable<any> {
-    return this.http.get(`${this.apiUrl}/products`);
+    return this.http.get(`${this.apiUrl}/uploads/Whats_App_Image_2024_10_01_at_12_12_32_df8049a9e7.jpeg`);
   }
 
-  // Fetch a specific product by ID
   getProductById(id: number): Observable<any> {
     return this.http.get(`${this.apiUrl}/products/${id}`);
   }

@@ -5,12 +5,6 @@ import { CasementDoorsComponent } from '../components/Doors/casement-doors/casem
 import { ConcealTrackDoorsComponent } from '../components/Doors/conceal-track-doors/conceal-track-doors.component';
 import { LiftSlideDoorsComponent } from '../components/Doors/lift-slide-doors/lift-slide-doors.component';
 import { SlimlineSlidingDoorsComponent } from '../components/Doors/slimline-sliding-doors/slimline-sliding-doors.component';
-import { BedComponent } from '../components/Furniture/bed/bed.component';
-import { CabinetComponent } from '../components/Furniture/cabinet/cabinet.component';
-import { ChairComponent } from '../components/Furniture/chair/chair.component';
-import { OtherComponent } from '../components/Furniture/other/other.component';
-import { SofaComponent } from '../components/Furniture/sofa/sofa.component';
-import { TableComponent } from '../components/Furniture/table/table.component';
 import { BlindsBetweenGlassComponent } from '../components/Unique/blinds-between-glass/blinds-between-glass.component';
 import { MotorizedSystemComponent } from '../components/Unique/motorized-system/motorized-system.component';
 import { SlimlineSystemComponent } from '../components/Unique/slimline-system/slimline-system.component';
@@ -57,30 +51,7 @@ export const routes: Routes = [
         path : "Slimline-Sliding-Doors",
         component : SlimlineSlidingDoorsComponent
     },
-     {
-        path : "Bed",
-        component : BedComponent
-    },
-     {
-        path : "Cabinet",
-        component : CabinetComponent
-    },
-     {
-        path : "Chair",
-        component : ChairComponent
-    },
-     {
-        path : "Other",
-        component : OtherComponent
-    },
-     {
-        path : "Sofa",
-        component : SofaComponent
-    },
-     {
-        path : "Table",
-        component : TableComponent
-    },
+
      {
         path : "Blinds-Between-Glass",
         component : BlindsBetweenGlassComponent
