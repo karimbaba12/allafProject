@@ -2,7 +2,11 @@
 <div class="image-container">
     <img src="https://cdnus.globalso.com/medodecor/Casement-window14.jpg" alt="">
 </div>
+<div class="title">
+    <h2>MD136 Slimline Casement Window</h2>
+</div>
 <div class="image-data">
+    
     <div class="image-three-column">
         <img src="https://cdnus.globalso.com/medodecor/4-double-casement-windows-300x300.jpg" alt="image">
         <img src="https://cdnus.globalso.com/medodecor/6-double-casement-window-300x300.jpg" alt="image">
@@ -57,7 +61,7 @@
         </div>
     </div>
     <div class="text-on-image-big">
-        <h5>open method</h5>
+        <h5>OPEN METHOD</h5>
         <div class="image-two-small">
             <img src="https://www.medodecor.com/uploads/218-187x300.png" alt="image">
             <img src="https://www.medodecor.com/uploads/4-black-casement-windows1-212x300.jpg" alt="image">
@@ -86,10 +90,10 @@
     </div>
     <div class="specification-container2">
         <div class="specification1" style="border: none;">
-
             <div class="image-with-text">
                 <div class="image-text">
-                    <img src="https://www.medodecor.com/uploads/WPS%E6%8B%BC%E5%9B%BE01.png" alt="image">
+                    <img src="https://www.medodecor.com/uploads/WPS%E6%8B%BC%E5%9B%BE01.png" style="width: 60vh;"
+                        alt="image">
                     <h6>Concealed Handle & Hidden Drainage</h6>
                 </div>
             </div>
@@ -254,19 +258,12 @@
 </div>
 
 <div class="button-container">
-    <!-- Button to show the first div -->
-    <button (click)="firstButton()" class="button-one">More Info</button>
+    <button class="button-one">More Info </button>
 
-    <!-- Button to hide the first div and show the second div -->
-    <button (click)=" secondButton ()   " class="button-two">Hide</button>
 </div>
+<h1 style="margin-left: 20vh;">should route to casemment window 2</h1>
 
-<div *ngIf="isFirstDivVisible" class="button-one-container">
-   
- <app-casement-window2></app-casement-window2> 
-</div>
 
-<div *ngIf="isSecondDivVisible">
-</div>
+
 
 <app-footer class="footer"></app-footer>
