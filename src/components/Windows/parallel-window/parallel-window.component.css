@@ -1,3 +1,8 @@
+.title{
+  display: flex;
+  justify-content: center;
+  margin-top: 20vh;
+}
 .image-container{
     z-index: 0;
     position: relative;
@@ -71,7 +76,7 @@ margin-bottom: 5vh;
 .title-single-image{
     display: flex;
     justify-content: center;
-    margin-top: 10vh;
+    margin-top: 20vh;
 }
 .features{
     display: flex;
@@ -128,6 +133,13 @@ width: 80vh;
  
 *{
   overflow: hidden;
+}
+.title{
+  margin-top: 2vh;
+  margin-bottom: 10vh;
+ }
+.title h2{
+  font-size: 20px;
 }
   .image-container{
    
