@@ -93,6 +93,11 @@ export const routes: Routes = [
      {
         path : "Sliding-Window",
         component : SlidingWindowComponent
-    }
+    },
+    {
+        path : "SlimLine-SlidingDoor",
+        component : SlimlineSlidingDoorsComponent 
+    },
+    
    
 ];
