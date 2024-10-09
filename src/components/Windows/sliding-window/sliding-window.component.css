@@ -196,7 +196,18 @@ z-index: 0;
 .text-image-text .image img{
   width: 100vh;
 }
+.last-image{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10vh;
+}
+.last-image img{
+  width: 150vh;
+}
 @media only screen and (max-width: 600px) {
+  *{
+    overflow: hidden;
+  }
 .title{
   margin-top: 5vh;
  }
@@ -241,7 +252,68 @@ z-index: 0;
   flex-direction: column;
 
 }
+.devided-image{
+  margin-top: 2vh;
+}
 .devided-image img{
     width: 40vh;
+}
+.title-image-paragraph .image-text{
+  flex-direction: column;
+}
+.specification-container{
+    margin-left: 0vh;
+    width: 95%;
+    margin-left: 1vh;
+    height: auto;
+    margin-right: 0vh;
+    
+}
+.specification-container .image-text{
+  flex-direction: column;
+  padding-left: 1vh;
+  margin: 1vh;
+
+}
+.specification-container .image-text .text{
+  margin-left: 0vh;
+  height: auto;
+}
+.specification-container .image-text .text p{
+  width: 40vh;
+  height: 100%;
+}
+.content .first-row{
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 20vh;
+}
+.content .second-row{
+  margin-left: 20vh;
+}
+
+.big-window{
+  margin: 0vh;
+}
+.big-window img{
+  width: 40vh;
+}
+.last-image img{
+  width: 40vh;
+}
+.text-image-text .paragraph{
+  margin-left: 0vh;
+  width: auto;
+}
+.text-image-text .paragraph p {
+  margin-left: 3vh;
+  width: 40vh;
+}
+.title-image-paragraph h6{
+  display: flex;
+  justify-content: center;
+}
+.title-image-paragraph .paragraph p{
+  width: 40vh;
 }
 }
