@@ -1,0 +1,288 @@
+
+.high-quality-aluminium{
+  margin-top: 10vh;
+}
+
+.high-quality-double{
+  margin-top: 7vh;
+}
+
+
+.carousel-inner{
+  margin-top: -128px;
+  z-index: 0;
+}
+.carousel-item.active img {
+  animation: zoomOut 1.5s ease-in-out;
+}
+
+@keyframes zoomOut {
+  20% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.image-row {
+  display: flex;
+  justify-content: space-around; 
+  gap: 10px; 
+}
+
+.image-container {
+  position: relative;
+  overflow: hidden; 
+  width: 23%; 
+  cursor: pointer;
+  margin-top: 0vh;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  transition: transform 1s ease; 
+}
+
+.image-container:hover img {
+  transform: scale(1.1) ; rotate: 10deg;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5); 
+  opacity: 0;
+  transition: opacity 0.5s ease; 
+}
+
+.image-container:hover .overlay {
+  opacity: 1;
+}
+
+
+.text {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  text-align: center;
+}
+
+h2{
+  margin-top: 10vh;
+  margin-left: 2vh;
+}
+
+
+.index_video_youtube {
+  display: flex;
+  justify-content: space-between; /* Spaces the videos evenly */
+  gap: 15px; /* Adds some space between the videos */
+  list-style-type: none; /* Removes default bullet points from list */
+  padding: 0;
+  margin-top: 10vh;
+}
+
+.index_video_youtube11 {
+  flex: 1; /* Makes each video take an equal share of the available space */
+  max-width: 100%; /* Ensures that each video takes up approximately one-third of the row */
+  position: relative;
+
+}
+
+.index_video_youtube iframe {
+   position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 39vh
+}
+
+
+
+.image-video {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 20vh;
+    }
+
+    .image, .video {
+        flex: 1;
+        margin: 10px;
+        max-width: 100%;
+    }
+
+    .image img, .video iframe {
+      
+        width: 100%;
+        height: 20%;
+
+    }
+
+    .video iframe{
+      width: 100%;
+      height: 38vh;
+    }
+
+
+    .hight-quality-modern{
+
+      margin-top: 20vh;
+    }
+
+    .learn-more{
+        display: block;
+        margin: 50vh auto 0vh auto;    
+        height: 40px;
+        width: 150px;
+        border: 1px solid black;
+        border-radius:10px;
+      }
+      .learn-more:hover {
+        background-color: black;
+        color: white;
+      }
+
+
+      .text-why-demo{
+        display: block;
+        margin-top: 40vh;
+        margin-left: 5vh;
+      }
+
+      .index_company_intr {
+    /* padding-top: 180px; */
+    padding-bottom: 180px;
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-background-size: 100% auto;
+    background-size: 100% auto;
+    margin-top: 15vh;
+}
+
+.index_company_intr:before, .index_company_intr:after {
+    content: '';
+    display: block;
+    width: 2px;
+    height: 128px;
+    border-left: 1px solid;
+    border-right: 1px solid;
+    margin: 0 auto auto ;
+}
+
+.index_company_intr:before, .index_company_intr:after {
+    content: '';
+    display: block;
+    width: 2px;
+    height: 128px;
+    border-left: 1px solid;
+    border-right: 1px solid;
+    margin: 0 auto;
+}
+
+
+.index_company_intr .index_bd {
+    padding: 40px 0;
+    text-align: center;
+}
+
+
+
+.btn{
+  height: 40px;
+  width: 150px;
+  margin-top: 20px;
+  border: 1px solid black;
+}
+.btn:hover {
+background-color: black;
+color: white;
+}
+
+.company_subscribe, .company_subscribe a {
+    color: #fff;
+}
+
+.company_subscribe {
+    padding: 70px 0;
+    text-align: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.social_items.flex_row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.social_items.flex_row li {
+  margin: 10vh; /* add some margin between items */
+}
+
+@media only screen and (max-width: 600px) {
+.carousel-inner{
+  z-index: 0;
+  position: absolute;
+   margin-top: -260px;
+  
+ }
+ .high-quality-double img{
+ margin-top: 35vh;
+ }
+
+ .image-row{
+
+  flex-direction: column;
+  
+ }
+ .image-row .image-container{
+  width:100%
+ }
+ .index_video_youtube{
+  flex-direction: column;
+ }
+ .index_video_youtube11{
+  margin-bottom: 40vh;
+ }
+ .image-video{
+  flex-direction: column;
+ }
+ .image-video .image{
+  margin-bottom: 5vh;
+ }
+ .image-video .video{
+  margin-bottom: 0vh;
+ }
+ .image-video .video iframe{
+  width: 100%
+ }
+
+ .index_company_intr .layout{
+  font-size: 10px;
+  width: 30vh;
+ margin-left: 10vh;
+
+ }
+
+ .learn-more{
+  margin-top: 10vh;
+ }
+
+ .inde_social .index_bd .social_items{
+  flex-direction: row;
+ }
+ .text-why-demo{
+        margin-top: 20vh;
+      }
+}
