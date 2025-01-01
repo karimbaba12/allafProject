@@ -1,0 +1,41 @@
+
+.first-sub-container,
+.second-sub-container,
+.third-sub-container,
+.fourth-sub-container,
+.fifth-sub-container,
+.sixth-sub-container
+{
+    width: 80%;
+    margin: 60px auto;
+}
+.second-sub-container h3,
+.third-sub-container h3{
+    font-size: 22px;
+}
+//
+.first-sub-container img{
+    width:100%;
+    height: auto;
+}
+//
+.second-sub-container div{
+    display: flex;
+    justify-content: center;
+    gap:15%;
+    width: 90%;
+    flex-wrap: nowrap;
+}
+.second-sub-container div img{
+    width: 10vw;
+    height: auto;
+
+}
+
+
+.third-sub-container img {
+    width: 50%;
+    height: auto;
+    text-align: center;
+}
+

@@ -1,0 +1,54 @@
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container-fluid">
+    <a routerLink="/" class="navbar-brand">
+      <img src="logo.png" alt="Logo" width="150" height="100" class="d-inline-block"/>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            WINDOWS
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item" routerLink="/casement-window" (click)="closeNavbar()">Casement Window</a></li>
+            <li><a class="dropdown-item" routerLink="/curtain-wall-window" (click)="closeNavbar()">Curtain Wall Window</a></li>
+            <li><a class="dropdown-item" routerLink="/motorized-lift-up-window" (click)="closeNavbar()">Motorized Lift-Up Window</a></li>
+            <li><a class="dropdown-item" routerLink="/parallel-window" (click)="closeNavbar()">Parallel Window</a></li>
+            <li><a class="dropdown-item" routerLink="/sliding-window" (click)="closeNavbar()">Sliding Window</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            DOORS
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item" routerLink="/bi-folding-door" (click)="closeNavbar()">Bi-Folding Door</a></li>
+            <li><a class="dropdown-item" routerLink="/casement-door" (click)="closeNavbar()">Casement Door</a></li>
+            <li><a class="dropdown-item" routerLink="/conceal-track-slimline-sliding-door" (click)="closeNavbar()">Conceal Track slimline Sliding Door</a></li>
+            <li><a class="dropdown-item" routerLink="/slimline-lift-slide-door" (click)="closeNavbar()">Slimline Lift and Sliding Door</a></li>
+            <li><a class="dropdown-item" routerLink="/slimline-sliding-door" (click)="closeNavbar()">Sliding Door</a></li>
+
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            UNIQUE
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item" routerLink="/blinds-between-glass" (click)="closeNavbar()">Blinds Between Glass System</a></li>
+            <li><a class="dropdown-item" routerLink="/motorized-system"(click)="closeNavbar()">Motorized System</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about-us" (click)="closeNavbar()">ABOUT US</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact-us" (click)="closeNavbar()">CONTACT US</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

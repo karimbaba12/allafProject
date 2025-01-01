@@ -1,0 +1,12 @@
+<div class="div-container">
+  <div class="row">
+      <div *ngFor="let image of images" class="col-6 col-md-3 mb-4">
+          <div class="card image-container">
+              <img [src]="image.src" class="card-img-top img-fluid custom-img-size" [alt]="image.alt">
+              <div class="overlay">
+                  <div class="overlay-text">{{ image.text }}</div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>

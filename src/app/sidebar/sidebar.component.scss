@@ -1,0 +1,38 @@
+.container div{
+    background-color: rgb(185, 24, 24);
+    width: 320px;
+    height: 50px;
+    margin: 30px ;
+    border-radius: 10px;
+}
+.container  {
+    position: fixed;
+    top: 30%;
+    z-index: 111;
+}
+.container img{
+    width: 44px;
+    height: auto;
+}
+.container p {
+    font-size: 15px;
+    font-weight: 500;
+    color: white;
+}
+.container .item-show{
+    position: relative;
+    left: -320px;
+    transition: opacity 0.5s ease, left 0.5s ease; 
+
+}
+.container .item-show:hover{
+    left:-50px ;
+
+}
+
+@media screen and (max-width:660px) {
+
+    div{
+        display: none;
+    }
+}

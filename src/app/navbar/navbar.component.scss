@@ -1,0 +1,56 @@
+
+
+.dropdown-menu {
+    position: absolute; // Position it absolutely
+    z-index: 1050; // Ensure it is above other elements
+    top: 100%; // Position it below the toggle link
+    left: 0; // Align it with the toggle link
+    // You can add more styles here as needed
+}
+.nav-link.dropdown-toggle ,.nav-item{
+    color: rgba(255, 16, 16, 0.774);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.dropdown-item {
+    color: #f84d4d;
+    &:hover {
+      color: #ffffff; 
+      background-color: #686868; 
+    }
+}
+.navbar-toggler{
+  background-color: rgba(197, 197, 197, 0.432);
+
+}
+
+
+
+@media screen and (max-width:600px) {
+  .navbar-collapse{
+    padding: 7.6px;
+    background-color: rgba(0, 0, 0, 0.521);
+    width: 70%;
+    font-size: 14px;
+  }
+  .nav-item{
+    width: 40%;
+  }
+
+}
+
+
+
+/* For screens with a minimum width of 680px */
+@media (min-width: 999px) {
+  /* Show dropdown when the parent nav-item is hovered */
+  .nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+  }
+
+  /* Initially hide the dropdown */
+  .dropdown-menu {
+    display: none;
+  }
+}

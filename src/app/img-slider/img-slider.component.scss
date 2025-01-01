@@ -1,0 +1,22 @@
+.carousel {
+    height:100vh; // Set desired height
+
+    .carousel-inner {
+        height: 100%;
+
+        .carousel-item {
+            height: 100%;
+
+            img {
+                height: 100%; // Makes the image take full height of the carousel
+                object-fit: cover; // Ensures the image covers the area
+            }
+        }
+    }
+}
+
+@media screen and (max-width:900px ){
+    .carousel {
+        height:48vh;
+    }
+}
