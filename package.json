@@ -29,13 +29,26 @@
     "@angular-devkit/build-angular": "^18.2.9",
     "@angular/cli": "^18.2.9",
     "@angular/compiler-cli": "^18.2.0",
+    "@types/express": "^5.0.0",
     "@types/jasmine": "~5.1.0",
+    "@types/node": "^22.10.4",
+    "@types/nodemailer": "^6.4.17",
+    "body-parser": "^1.20.3",
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
     "jasmine-core": "~5.2.0",
     "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.2.0",
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
+    "nodemailer": "^6.9.16",
+    "ts-node": "^10.9.2",
     "typescript": "~5.5.2"
-  }
+  },
+  "description": "This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.9.",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }

@@ -40,8 +40,5 @@ testem.log
 # System files
 .DS_Store
 Thumbs.db
-<<<<<<< HEAD
 
 /public
-=======
->>>>>>> 667df993ee86f11a32f22ec391b8ad440c13b248

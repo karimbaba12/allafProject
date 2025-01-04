@@ -9,7 +9,7 @@ import { Router, RouterModule } from '@angular/router';
   styleUrl: './footer.component.scss'
 })
 export class FooterComponent {
-  email = "222@gmail.com"
+  email = "allafproject@gmail.com"
   constructor(private router: Router) {}
 
   // Scroll to the top after routing
