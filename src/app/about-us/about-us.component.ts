@@ -12,6 +12,7 @@ import { StrapiService } from '../../service/strapiApi';
   providers: [StrapiService],
 })
 export class AboutUsComponent {
+  
   data: any[] = [];
 
   constructor(private strapiService: StrapiService) {}

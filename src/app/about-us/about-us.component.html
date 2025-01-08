@@ -1,7 +1,4 @@
-<app-img-slider [images]="[
-    'blindsBetweenGlass2'
-    ]">
-</app-img-slider>
+<app-img-slider [images]="['home5']"></app-img-slider>
 
 <div *ngIf="data.length > 0; else noData" class="container mt-4">
     <div class="row">
@@ -14,7 +11,7 @@
                 <ng-template #noImage>
                     <div class="card-img-top bg-light d-flex align-items-center justify-content-center"
                         style="height: 200px;">
-                        <p class="text-muted">No image available</p>
+                        <p class="text-muted">Image not available</p>
                     </div>
                 </ng-template>
 
@@ -22,7 +19,7 @@
                 <div class="card-body">
                     <h3 class="card-title">{{ item.Title }}</h3>
                     <p class="card-text">{{ item.Description }}</p>
-                    <small class="text-muted">Published At: {{ item.publishedAt | date:'medium' }}</small>
+                    <small class="text-muted">Published: {{ item.publishedAt | date:'medium' }}</small>
                 </div>
             </div>
         </div>
@@ -33,7 +30,92 @@
 <ng-template #noData>
     <div class="container mt-4">
         <div class="alert alert-info" role="alert">
-            No data available
+            No data found
         </div>
     </div>
 </ng-template>
+
+<div class="container about-container">
+    <!-- Header Section -->
+    <div class="row text-center about-header">
+        <div class="col">
+            <h1 class="display-4">About HASCO</h1>
+            <p class="lead">Elevating Homes with Superior Doors & Windows</p>
+        </div>
+    </div>
+
+    <!-- Content Section -->
+    <div class="row align-items-center mt-4">
+        <div class="col-md-6">
+            <p>
+                Welcome to <strong>HASCO</strong>, your go-to provider for top-quality doors and windows.
+                We specialize in delivering stylish, durable, and secure solutions that enhance the beauty and safety of
+                your living space.
+            </p>
+        </div>
+        <div class="col-md-6">
+            <p>
+                Our mission is to help you create a <span class="text-warning fw-bold">5-star home</span> with products
+                designed for both elegance and functionality.
+                We ensure each item meets high standards of craftsmanship and performance.
+            </p>
+        </div>
+    </div>
+
+    <!-- Features Section -->
+    <div class="row mt-5">
+        <div class="col text-center">
+            <h2 class="text-primary">Why Choose HASCO?</h2>
+        </div>
+    </div>
+    <div class="row text-center">
+        <div class="col-md-4">
+            <div class="p-3 border rounded shadow-sm">
+                <h3>🌟 Exceptional Quality</h3>
+                <p>Built to last with premium materials and superior craftsmanship.</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="p-3 border rounded shadow-sm">
+                <h3>🔒 Maximum Security</h3>
+                <p>Advanced designs ensure enhanced protection and durability.</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="p-3 border rounded shadow-sm">
+                <h3>🌿 Eco-Friendly</h3>
+                <p>Energy-efficient solutions to lower costs and promote sustainability.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mission Section -->
+    <div class="row mt-5">
+        <div class="col-md-6">
+            <h2 class="text-primary">Our Purpose</h2>
+            <p>
+                At HASCO, we believe that every home deserves the perfect finishing touch.
+                Our goal is to provide innovative and practical solutions that blend seamlessly with modern architecture
+                while ensuring longevity and efficiency.
+            </p>
+        </div>
+        <div class="col-md-6">
+            <h2 class="text-primary">Our Commitment</h2>
+            <p>
+                We are dedicated to excellence, constantly refining our designs to meet evolving industry standards.
+                Our team works tirelessly to bring you the finest selections tailored to your needs and preferences.
+            </p>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="row mt-5">
+        <div class="col text-center">
+            <h2 class="text-primary">Get in Touch</h2>
+            <p>📍 Address: Your Company Location</p>
+            <p>📞 Phone: +123 456 7890</p>
+            <p>📧 Email: <a href="mailto:info@hasco-intl.com.au" class="text-decoration-none">info&#64;hasco-intl.com.au</a>
+            </p>
+        </div>
+    </div>
+</div>

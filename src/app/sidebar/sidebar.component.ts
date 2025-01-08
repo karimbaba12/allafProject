@@ -6,11 +6,10 @@ import { imgNickname } from '../../service/imgNickName';
   standalone: true,
   imports: [],
   templateUrl: './sidebar.component.html',
-  styleUrl: './sidebar.component.scss'
+  styleUrl: './sidebar.component.scss',
 })
 export class SidebarComponent {
-  email="222@gmail.com"
-  imgPath1= imgNickname['contactUs3'];
-  imgPath2= imgNickname['contactUs2'];
-
+  email = 'info@hasco-intl.com.au';
+  imgPath1 = imgNickname['contactUs3'];
+  imgPath2 = imgNickname['contactUs2'];
 }

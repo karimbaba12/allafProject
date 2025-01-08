@@ -1,0 +1,26 @@
+.about-container {
+  padding: 40px 0;
+
+  .about-header {
+    background: #4c7958;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  .border {
+    background: #f8f9fa;
+  }
+
+  h2 {
+    margin-bottom: 15px;
+  }
+
+  .text-primary {
+    color: #4c7958 !important;
+  }
+
+  .text-warning {
+    color: #ffc107 !important;
+  }
+}

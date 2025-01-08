@@ -6,10 +6,10 @@ import { Router, RouterModule } from '@angular/router';
   standalone: true,
   imports: [RouterModule],
   templateUrl: './footer.component.html',
-  styleUrl: './footer.component.scss'
+  styleUrl: './footer.component.scss',
 })
 export class FooterComponent {
-  email = "allafproject@gmail.com"
+  email = 'info@hasco-intl.com.au';
   constructor(private router: Router) {}
 
   // Scroll to the top after routing

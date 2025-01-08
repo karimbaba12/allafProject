@@ -7,7 +7,8 @@ import { map, Observable } from 'rxjs';
   providedIn: 'root',
 })
 export class StrapiService {
-  private apiUrl = 'http://dashboard.hasco-intl.com.au/api';
+  //private apiUrl = 'http://dashboard.hasco-intl.com.au/api';
+  private apiUrl = 'http://localhost:1337/api';
 
   constructor(private http: HttpClient) {}
   getData(): Observable<any> {
@@ -16,7 +17,8 @@ export class StrapiService {
         console.log(response); // Check the API response structure
         response.data.forEach((item: any) => {
           if (item.Image) {
-            item.Image.url = `http://dashboard.hasco-intl.com.au/${item.Image.url}`; // Add base URL if missing
+          //  item.Image.url = `http://dashboard.hasco-intl.com.au/${item.Image.url}`; // Add base URL if missing
+            item.Image.url = `http://localhost:1337/${item.Image.url}`; // Add base URL if missing
           }
         });
         return response;
