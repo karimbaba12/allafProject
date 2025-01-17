@@ -304,5 +304,8 @@ export const imgNickname: ImageNickname = {
     contactUs3 :'/img/15-contact-us/3-contact-us.jpg',
     contactUs4 :'/img/15-contact-us/4-contact-us.jpg',
     contactUs5 :'/img/15-contact-us/5-contact-us.jpg',
+    contactUs6 :'/img/15-contact-us/location.png',
+    contactUs7 :'/img/15-contact-us/mail.png',
+    contactUs8 :'/img/15-contact-us/whatsapp.png',
 };
 

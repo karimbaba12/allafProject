@@ -10,6 +10,7 @@ import { Router, RouterModule } from '@angular/router';
 })
 export class FooterComponent {
   email = 'info@hasco-intl.com.au';
+  number = '+61 410 181 003';
   constructor(private router: Router) {}
 
   // Scroll to the top after routing

@@ -15,9 +15,11 @@ import { MotorizedSystemComponent } from './uniques/motorized-system/motorized-s
 import { AboutUsComponent } from './about-us/about-us.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { TestComponent } from './test/test.component';
+import { ProjectComponent } from './project/project.component';
 
 export const routes: Routes = [
   { path: '', component: HomeComponent },
+  { path: '*', redirectTo: '', pathMatch: 'full' },
   { path: 'casement-window', component: CasementWindowComponent },
   { path: 'curtain-wall-window', component: CurtainWallWindowComponent },
   {
@@ -41,5 +43,5 @@ export const routes: Routes = [
   { path: 'motorized-system', component: MotorizedSystemComponent },
   { path: 'about-us', component: AboutUsComponent },
   { path: 'contact-us', component: ContactUsComponent },
-  { path: 'test', component: TestComponent },
+  { path: 'projects', component: ProjectComponent },
 ];
