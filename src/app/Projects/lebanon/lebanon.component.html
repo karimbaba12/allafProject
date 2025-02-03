@@ -1,0 +1,42 @@
+<app-img-slider [images]="[
+    'slimlineFoldingDoor7',
+    ]">
+</app-img-slider>
+
+<div *ngIf="data.length > 0; else noData" class="container mt-4">
+    <div class="row">
+        <div *ngFor="let item of data; let i = index" class="col-md-6 col-lg-4 mb-4">
+            <div class="card h-100 shadow-sm">
+                <!-- Image Section -->
+                <div *ngIf="item.images && item.images.length; else noImage" class="card-img-top">
+                    <!-- Unique ID for each carousel -->
+                    <app-dynamic-slider-from-api [images]="item.images"
+                        [carouselId]="'carousel' + i"></app-dynamic-slider-from-api>
+                </div>
+
+                <!-- No Image Section -->
+                <ng-template #noImage>
+                    <div class="card-img-top bg-light d-flex align-items-center justify-content-center"
+                        style="height: 200px;">
+                        <p class="text-muted">No image available</p>
+                    </div>
+                </ng-template>
+
+                <!-- Card Body -->
+                <div class="card-body align-items-center">
+                    <h3 class="card-title">{{ item.Title }}</h3>
+                    <p class="card-text">{{ item.Description }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- No Data Template -->
+<ng-template #noData>
+    <div class="container mt-4">
+        <div class="alert alert-info" role="alert">
+            No data available
+        </div>
+    </div>
+</ng-template>

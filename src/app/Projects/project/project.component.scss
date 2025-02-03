@@ -1,0 +1,18 @@
+/* Assuming you are using SCSS or you can add this to your styles.css */
+.card {
+  display: flex;
+  flex-direction: column;
+  height: 100%; /* Ensure the card takes full height */
+}
+
+.card-img-top {
+  flex-shrink: 0; /* Prevent the image from shrinking */
+  height: auto;   /* Image should scale properly */
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* Aligns the title and description to the bottom */
+  margin-top: auto;  /* Ensures the body section is pushed to the bottom */
+}
