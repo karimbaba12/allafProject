@@ -14,8 +14,13 @@ import { BliindsBetweenGlassComponent } from './uniques/bliinds-between-glass/bl
 import { MotorizedSystemComponent } from './uniques/motorized-system/motorized-system.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
-import { TestComponent } from './test/test.component';
-import { ProjectComponent } from './project/project.component';
+import { ProjectComponent } from './Projects/project/project.component';
+import { AustraliaComponent } from './Projects/australia/australia.component';
+import { LebanonComponent } from './Projects/lebanon/lebanon.component';
+import { KuwaitComponent } from './Projects/kuwait/kuwait.component';
+import { QatarComponent } from './Projects/qatar/qatar.component';
+import { GhanaComponent } from './Projects/ghana/ghana.component';
+import { NairobiComponent } from './Projects/nairobi/nairobi.component';
 
 export const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -44,4 +49,10 @@ export const routes: Routes = [
   { path: 'about-us', component: AboutUsComponent },
   { path: 'contact-us', component: ContactUsComponent },
   { path: 'projects', component: ProjectComponent },
+  { path: 'Australia', component: AustraliaComponent },
+  { path: 'Lebanon', component: LebanonComponent },
+  { path: 'Kuwait', component: KuwaitComponent },
+  { path: 'Qatar', component: QatarComponent },
+  { path: 'Ghana', component: GhanaComponent },
+  { path: 'Nairobi', component: NairobiComponent },
 ];

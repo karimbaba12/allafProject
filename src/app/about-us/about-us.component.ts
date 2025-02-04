@@ -7,25 +7,9 @@ import { RouterModule } from '@angular/router';
 @Component({
   selector: 'app-about-us',
   standalone: true,
-  imports: [ImgSliderComponent, CommonModule,RouterModule],
+  imports: [ImgSliderComponent, CommonModule, RouterModule],
   templateUrl: './about-us.component.html',
   styleUrl: './about-us.component.scss',
   providers: [StrapiService],
 })
-export class AboutUsComponent {
-  
-  data: any[] = [];
-
-  constructor(private strapiService: StrapiService) {}
-
-  ngOnInit(): void {
-    this.strapiService.getData().subscribe(
-      (response) => {
-        this.data = response.data;
-      },
-      (error) => {
-        console.error('Error fetching data:', error);
-      }
-    );
-  }
-}
+export class AboutUsComponent {}

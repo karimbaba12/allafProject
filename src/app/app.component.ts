@@ -15,7 +15,6 @@ import { HttpClientModule } from '@angular/common/http';
     FooterComponent,
     MessageComponent,
     SidebarComponent,
-    
     HttpClientModule,
   ],
   templateUrl: './app.component.html',

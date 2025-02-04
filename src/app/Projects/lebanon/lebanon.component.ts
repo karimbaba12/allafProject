@@ -20,7 +20,6 @@ export class LebanonComponent implements OnInit {
     this.strapiService.getDataLebanon().subscribe(
       (response) => {
         this.data = response.map((item: any) => {
-          console.log(' Lebanon Raw item:', item);
 
           return {
             ...item,
@@ -31,10 +30,8 @@ export class LebanonComponent implements OnInit {
           };
         });
 
-        console.log('Processed Data:', this.data);
       },
       (error) => {
-        console.error('Error fetching data:', error);
       }
     );
   }

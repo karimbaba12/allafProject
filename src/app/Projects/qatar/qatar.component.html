@@ -2,9 +2,9 @@
         'parallelWindow2',
     ]">
 </app-img-slider>
-<div *ngIf="data.length > 0; else noData" class="container mt-4">
+<div *ngIf="data.length > 0; else Loading" class="container mt-4">
     <div class="row">
-        <div *ngFor="let item of data; let i = index" class="col-md-6 col-lg-4 mb-4">
+        <div *ngFor="let item of data.slice().reverse(); let i = index" class="col-md-6 col-lg-4 mb-4">
             <div class="card h-100 shadow-sm">
                 <!-- Image Section -->
                 <div *ngIf="item.images && item.images.length; else noImage" class="card-img-top">
@@ -31,11 +31,12 @@
     </div>
 </div>
 
+
 <!-- No Data Template -->
-<ng-template #noData>
+<ng-template #Loading>
     <div class="container mt-4">
         <div class="alert alert-info" role="alert">
-            No data available
+            Loading Data...
         </div>
     </div>
 </ng-template>

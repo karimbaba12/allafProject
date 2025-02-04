@@ -20,7 +20,6 @@ export class KuwaitComponent implements OnInit {
       this.strapiService.getDataKuwait().subscribe(
         (response) => {
           this.data = response.map((item: any) => {
-            console.log('Raw item:', item);
   
             return {
               ...item,
@@ -31,10 +30,8 @@ export class KuwaitComponent implements OnInit {
             };
           });
   
-          console.log('Processed Data:', this.data);
         },
         (error) => {
-          console.error('Error fetching data:', error);
         }
       );
     }

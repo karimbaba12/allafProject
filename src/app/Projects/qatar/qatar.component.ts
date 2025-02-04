@@ -20,22 +20,16 @@ export class QatarComponent implements OnInit {
     this.strapiService.getDataQatar().subscribe(
       (response) => {
         this.data = response.map((item: any) => {
-          console.log('Raw item:', item);
-
           return {
             ...item,
             images:
               item.images && item.images.length
-                ? item.images.map((img: any) => img) // Ensure images are passed
+                ? item.images.map((img: any) => img) 
                 : [],
           };
         });
-
-        console.log('Processed Data:', this.data);
       },
-      (error) => {
-        console.error('Error fetching data:', error);
-      }
+      (error) => {}
     );
   }
 }

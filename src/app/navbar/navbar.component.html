@@ -53,9 +53,22 @@
             </li>
           </ul>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" routerLink="/projects" (click)="closeNavbar()">PROJECTS</a>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            Projects
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item" routerLink="/Australia" (click)="closeNavbar()">Australia</a>
+              <a class="dropdown-item" routerLink="/Lebanon" (click)="closeNavbar()">Lebanon</a>
+              <a class="dropdown-item" routerLink="/Kuwait" (click)="closeNavbar()">Kuwait</a>
+              <a class="dropdown-item" routerLink="/Qatar" (click)="closeNavbar()">Qatar</a>
+              <a class="dropdown-item" routerLink="/Nairobi" (click)="closeNavbar()">Nairobi</a>
+              <a class="dropdown-item" routerLink="/Ghana" (click)="closeNavbar()">Ghana</a>
+            </li>
+          </ul>
         </li>
+
         <li class="nav-item">
           <a class="nav-link" routerLink="/about-us" (click)="closeNavbar()">ABOUT US</a>
         </li>

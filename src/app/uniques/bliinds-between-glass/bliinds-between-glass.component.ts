@@ -1,15 +1,14 @@
 import { Component } from '@angular/core';
-import { SmallImgSliderComponent } from "../../small-img-slider/small-img-slider.component";
-import { ImgSliderComponent } from "../../img-slider/img-slider.component";
+import { SmallImgSliderComponent } from '../../small-img-slider/small-img-slider.component';
+import { ImgSliderComponent } from '../../img-slider/img-slider.component';
 import { imgNickname } from '../../../service/imgNickName';
-
 
 @Component({
   selector: 'app-bliinds-between-glass',
   standalone: true,
   imports: [SmallImgSliderComponent, ImgSliderComponent],
   templateUrl: './bliinds-between-glass.component.html',
-  styleUrl: './bliinds-between-glass.component.scss'
+  styleUrl: './bliinds-between-glass.component.scss',
 })
 export class BliindsBetweenGlassComponent {
   imgPath1 = imgNickname['blindsBetweenGlass2'];
@@ -24,5 +23,4 @@ export class BliindsBetweenGlassComponent {
   imgPath10 = imgNickname['blindsBetweenGlass11'];
   imgPath11 = imgNickname['blindsBetweenGlass12'];
   imgPath12 = imgNickname['blindsBetweenGlass13'];
-
 }
